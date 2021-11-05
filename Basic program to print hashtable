@@ -1,0 +1,23 @@
+using System;
+using System.Collections;
+
+
+
+class Demo
+{
+public static void Main()
+{
+Hashtable h=new Hashtable();
+
+h.Add(1,"umesh");
+h.Add(2,"Edureka");
+
+Console.WriteLine("the key and values are : ");
+
+foreach(DictionaryEntry data in h)
+{
+Console.WriteLine("key is {0}, Value is {1}",data.Key,data.Value);
+}
+
+}
+}
