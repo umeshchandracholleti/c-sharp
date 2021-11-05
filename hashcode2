@@ -1,0 +1,46 @@
+// C# program to demonstrate
+// Object.GetHashCode() Method
+using System;
+
+public class Author {
+
+	public string f_Name;
+	public string l_Name;
+
+	public Author(string f_Name,
+				string l_Name)
+	{
+		this.f_Name = f_Name;
+		this.l_Name = l_Name;
+	}
+
+	public void Show()
+	{
+		Console.WriteLine("first Name : "
+							+ f_Name);
+
+		Console.WriteLine("last Name : "
+							+ l_Name);
+	}
+}
+
+// Driver Class
+class asd {
+
+	// Main method
+	public static void Main()
+	{
+
+		// Creating and initializing
+		// the object of Author class
+		Author aobj = new Author("rakesh", "umesh");
+
+		Console.WriteLine("Author details:");
+		aobj.Show();
+
+		// Get the Hash Code of aobj object
+		// Using GetHashCode() method
+		Console.WriteLine("The hash code of object is: {0}",
+										aobj.GetHashCode());
+	}
+}
