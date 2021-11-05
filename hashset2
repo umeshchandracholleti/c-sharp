@@ -1,0 +1,25 @@
+
+using System;
+using System.Collections.Generic;class Demo
+{
+public static void Main()
+{
+HashSet<int> h1=new HashSet<int>();
+HashSet<int> h2=new HashSet<int>();
+h1.Add(1);
+h1.Add(2);
+h1.Add(3);
+h1.Add(2);
+h1.Add(4);
+h1.Add(5);
+
+
+HashSet<int> h3=new HashSet<int>(h1);
+h3.UnionWith(h2);
+foreach(int i in h3)
+{
+Console.WriteLine(i);
+}
+}
+}
+
