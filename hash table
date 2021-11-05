@@ -1,0 +1,25 @@
+// C# program to demonstrate
+// Object.GetHashCode() Method
+using System;
+
+class aha {
+
+	// Main Method
+	public static void Main()
+	{
+
+		// declaring an object
+		Object obj = new Object();
+
+		// taking Type type and assigning
+		// the value as type of above
+		// defined types using GetType
+		// method
+		Type t = obj.GetType();
+
+		// Display type and hash code
+		Console.WriteLine("Type is :{0}", t);
+		Console.WriteLine("Hash Code is :{0}",
+							t.GetHashCode());
+	}
+}
