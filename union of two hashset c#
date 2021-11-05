@@ -1,0 +1,40 @@
+// C# code to find Union of two HashSet
+using System;
+using System.Collections.Generic;
+
+class asdf {
+
+	// Driver code
+	public static void Main()
+	{
+
+		// Creating a HashSet of strings
+		HashSet<string> mySet1 = new HashSet<string>();
+
+		// Creating a HashSet of strings
+		HashSet<string> mySet2 = new HashSet<string>();
+
+		// Inserting elements in mySet1
+		mySet1.Add("Hello");
+		mySet1.Add("hi evryone");
+		mySet1.Add("hi evryone");
+
+		// Inserting elements in mySet2
+		mySet2.Add("You");
+		mySet2.Add("are");
+		mySet2.Add("the");
+		mySet2.Add("best");
+
+		// Creating a new HashSet that contains
+		// the union of both the HashSet mySet1 & mySet2
+		HashSet<string> ans = new HashSet<string>(mySet1);
+
+		ans.UnionWith(mySet2);
+
+		// Printing the union of both the HashSet
+		foreach(string i in ans)
+		{
+			Console.WriteLine(i);
+		}
+	}
+}
